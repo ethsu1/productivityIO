@@ -1,0 +1,38 @@
+version: '3.3'
+
+services:
+  db:
+    image: mysql:8.0.20
+    restart: always
+    environment:  
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASS}
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    #persist data
+    volumes:
+        - my_db:/var/lib/mysql
+    networks:
+      - backend
+  server:
+    image: ethsu/productivityio:server
+    environment:
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASS=${MYSQL_PASS}
+    ports:
+      - '8080:8080'
+    depends_on:
+      - db 
+    links:
+      - db
+    networks:
+      - backend
+networks:
+  backend:
+    driver: 'bridge'
+
+
+# Names the volume
+volumes:
+  my_db:

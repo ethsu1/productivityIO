@@ -1,0 +1,34 @@
+.title{
+	text-align: center;
+	width: 100%;
+	background-color: green;
+}
+
+.navbar{
+	background-color: green;
+}
+.slogan {
+	background-color: white;
+}
+.slogantitle {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+}
+
+.signinbody {
+	display: flex;
+    justify-content: center; 
+}
+
+.signupbody{
+	display: flex;
+    justify-content: center; 
+
+}
+
+.errormsg{
+	display: flex;
+	justify-content: center; 
+	color: red;
+}

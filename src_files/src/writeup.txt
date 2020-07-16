@@ -1,0 +1,10 @@
+How to start up the application:
+npm start run
+
+package.json defines all the packages/libraries the app depends on
+webpack is a static module bundler (builds a dependency graph to bundle all
+your modules into one or more bundles)
+
+
+mysql
+golang

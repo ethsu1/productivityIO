@@ -1,0 +1,18 @@
+{
+    "name": "ProductivityIO",
+    "version": "1.0",
+    "description": "Gamify productivity and limit distractions! This chrome extension is to be used in conjuction with productivityio.azurewebsites.net",
+    "icons": [],
+    "permissions": [
+    	"tabs",
+         "webRequestBlocking",
+         "webRequest",
+         "<all_urls>",
+         "storage"
+     ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "manifest_version": 2
+  }
