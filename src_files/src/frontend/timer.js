@@ -69,14 +69,15 @@ class Timer extends React.Component {
 			//this.setState({count: 0})
 			if(this.state.hour !== 0 || this.state.minute !== 0){
 				//window.sessionStorage.setItem('canPlay', 1);
+				var total_time = this.state.hour*60 + this.state.minute
 				var user = window.localStorage.getItem('user')
 				fetch("https://productivityio.azurewebsites.net/timer?user="+user, {credentials: 'include'})
 				.then(r => r.json())
 				.then(data =>{
 					//updating database with values to allow user to play the mini-game
-					if(data == 1){
+					if(data == 1 && total_time >= 20){
 						const params = new URLSearchParams();
-						params.append('play', 1);
+						params.append('play', Math.floor(total_time/20));
 						params.append('user', user);
 						params.append('healthIncrease', 1)
 						axios.post("https://productivityio.azurewebsites.net/play",params,{withCredentials: true})
