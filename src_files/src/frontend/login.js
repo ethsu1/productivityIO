@@ -67,16 +67,14 @@ class LoginPage extends React.Component {
 		this.setState({errorMsg: "Something went wrong on Google's end. Please try again later."})
 	}
 	render() {
-		return (<Container fluid>
+		return (<Container fluid className="backgroundlogin">
 					<Row>
-						<Col>
-							<Navbar variant="dark" className="navbar">
+							<Navbar variant="dark" className="navbar" fluid>
 								<Navbar.Brand className="title">Productivity.IO</Navbar.Brand>
 							</Navbar>
-							<Navbar variant="light" className="slogan">
-								<Navbar.Brand className="slogantitle">Gamify Productivity and Reach Your Goals!</Navbar.Brand>
+							<Navbar variant="light" className="slogan" fluid>
+								<Navbar.Brand className="slogantitle">Limit Distractions, Gamify Productivity, and Reach Your Goals!</Navbar.Brand>
 							</Navbar>
-						</Col>
 					</Row>
 					<Row>
 						<Col>

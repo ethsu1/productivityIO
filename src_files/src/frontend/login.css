@@ -6,9 +6,13 @@
 
 .navbar{
 	background-color: green;
+	width: 100%;
+	display: flex;
 }
 .slogan {
 	background-color: white;
+	width: 100%;
+	opacity: 100%;
 }
 .slogantitle {
 	width: 100%;
@@ -31,4 +35,11 @@
 	display: flex;
 	justify-content: center; 
 	color: red;
+}
+
+.backgroundlogin{
+	background-image: url(./backgroundimage.jpeg);
+	height: 100%;
+	width: 100%;
+	opacity: 75%;
 }

@@ -43,7 +43,8 @@ class About extends React.Component {
 					hero beat the boss! Enjoy and unlock your potential!</p>
 				<p>Disclaimer: This web app will only block urls while the timer is running with a tab opened up for this web app. This means
 				if you choose to close this tab or enter a new url using this tab, the web app will no longer be blocking your inputted 
-				urls.</p>
+				urls. In addition, when you input new policies/urls, you may need to refresh the page in order to update the chrome extension with 
+			the relevant urls.</p>
 			</div>)
 	}
 }
