@@ -4,7 +4,7 @@
     "description": "Gamify productivity and limit distractions! This chrome extension is to be used in conjuction with productivityio.azurewebsites.net",
     "icons": [],
     "permissions": [
-    	"tabs",
+    	"activeTab",
          "webRequestBlocking",
          "webRequest",
          "<all_urls>"
